@@ -1,0 +1,47 @@
+//CSS carousel
+.taCarousel {
+    width: 100%;
+    padding: 60px 0 50px;
+    position: relative;
+
+    .container {
+        width: 100%;
+        padding: 0 29px;
+        top: 21px;
+        z-index: 3;
+    }
+    .carousel_left {
+        width: 55%;
+        padding: 18% 0 15% 0;
+        .title {
+            h2 {
+                @include styleText($color-pink-1, $fs-4 + 0.5, $fw-3);
+            }
+            h1 {
+                @include styleText($color-dark-1, $fs-8, $fw-4);
+                position: relative;
+            }
+        }
+    }
+
+    .carousel_top {
+        position: absolute;
+        left: 0;
+        top: 0;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    .carousel_bottom {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}

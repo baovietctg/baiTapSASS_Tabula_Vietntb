@@ -1,0 +1,358 @@
+.fixed-top {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  padding: 0px;
+  margin: none;
+  z-index: 100;
+  border-bottom: 0px solid rgba(231, 231, 231, 0.18);
+  background-color: transparent;
+}
+
+.navbar-fixed {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  padding: 0px;
+  margin: none;
+  border-bottom: none;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  z-index: 100;
+  background-color: #f5f9fe;
+}
+
+header .active::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #b61984;
+  display: block;
+  border-radius: 50%;
+  transform: translateX(25px) translateY(0px);
+}
+header #nav-vietntb {
+  padding: none !important;
+}
+header .navbar-expand-lg .navbar-nav .nav-link, header .navbar-expand-lg .navbar-nav .socialArea a, header .socialArea .navbar-expand-lg .navbar-nav a {
+  padding-right: 1.5rem;
+  color: #181818;
+  font-size: 15px;
+  font-weight: 500;
+}
+header .collapse .navbar-nav {
+  padding-left: 200px;
+}
+header .navbar-nav .nav-item a:hover {
+  text-decoration: none;
+  color: #b61984;
+}
+header .btnPhone {
+  background: #b61984;
+  border-radius: 20px;
+  border: 2px;
+  padding: 7px 20px;
+  color: #f5f9fe;
+  justify-content: center;
+  text-align: center;
+}
+header .btnPhone span {
+  color: #f5f9fe;
+  font-size: 13.5px;
+  font-weight: 500;
+  justify-content: center;
+}
+header .btnPhone:hover {
+  background: #f5f9fe;
+  border: solid 1px #b61984;
+  color: #181818;
+  transition: all 0.5s;
+  color: #b61984;
+}
+header .btnPhone:hover span {
+  color: #b61984;
+  font-size: 13.5px;
+  font-weight: 500;
+  justify-content: center;
+}
+header .socialArea a {
+  font-size: 13px;
+  padding-left: 10px;
+  color: #181818;
+}
+header .socialArea a:hover {
+  text-decoration: none;
+  color: #b61984;
+}
+
+.taCarousel {
+  width: 100%;
+  padding: 60px 0 50px;
+  position: relative;
+}
+.taCarousel .container {
+  width: 100%;
+  padding: 0 29px;
+  top: 21px;
+  z-index: 3;
+}
+.taCarousel .carousel_left {
+  width: 55%;
+  padding: 18% 0 15% 0;
+}
+.taCarousel .carousel_left .title h2 {
+  color: #b61984;
+  font-size: 16.5px;
+  font-weight: 500;
+}
+.taCarousel .carousel_left .title h1 {
+  color: #181818;
+  font-size: 57px;
+  font-weight: 700;
+  position: relative;
+}
+.taCarousel .carousel_top {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.taCarousel .carousel_top img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.taCarousel .carousel_bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.taCarousel .carousel_bottom img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.taTeacher {
+  position: relative;
+  background-color: #dcd1f3;
+}
+.taTeacher .row {
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.taTeacher .row .card {
+  border-radius: 10px;
+}
+.taTeacher .row .card .card-body {
+  text-align: center;
+  padding: 20px 5px;
+}
+.taTeacher .row .card .card-title {
+  font-size: 11.25px;
+  margin-bottom: 5px;
+  color: #b61984;
+}
+.taTeacher .row .card .card-name {
+  font-size: 23.25px;
+  font-weight: 700;
+  color: #181818;
+  padding: 2px 0;
+}
+.taTeacher .row .card .card-text {
+  font-size: 15px;
+  font-weight: 400;
+  color: #181818;
+  padding: 6px 0;
+}
+.taTeacher .row .card img {
+  border-radius: 0px;
+  transform-origin: 0 0;
+}
+.taTeacher .row .card:hover {
+  box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 0.2);
+  transition: all 0.8s;
+}
+
+.Teacher_top_pic {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  pointer-events: none;
+}
+.Teacher_top_pic img {
+  max-width: 100%;
+  height: auto;
+}
+
+.taContact {
+  width: 50%;
+  margin: auto;
+  display: flex;
+}
+
+#contact_left {
+  width: 60%;
+}
+
+#contact_right {
+  width: 20%;
+  margin-right: 0;
+}
+
+.contactName, .contactEmail {
+  border: solid 1px gray;
+  border-radius: 20px 20px 20px 20px;
+  padding-right: 20px;
+  margin-right: 6px;
+}
+.contactName .icon, .contactEmail .icon {
+  padding: 7px 14px;
+  color: palevioletred;
+}
+
+#InputName, #InputEmail {
+  border: none;
+  outline: none;
+  padding: 7px 0;
+}
+#InputName:input:focus, #InputEmail:input:focus {
+  border: 5px solid rgb(2, 112, 236);
+  box-shadow: 0px 0px 7px 0px rgba(22, 155, 243, 0.8);
+}
+
+.formpeople {
+  padding-top: 150px;
+  position: relative;
+}
+.formpeople .row {
+  width: 100%;
+}
+.formpeople .formimg {
+  display: block;
+  overflow: hidden;
+}
+.formpeople .formimg img {
+  display: block;
+  margin: 0;
+  line-height: 0;
+  max-width: 100%;
+  height: auto;
+}
+.formpeople .formtext .formthunhat {
+  display: flex;
+  justify-content: center;
+}
+.formpeople .formtext .formthunhat .name {
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+  padding-right: 1em;
+}
+.formpeople .formtext .formthunhat .name .fa-solid {
+  position: absolute;
+  top: 11.2rem;
+  left: 3em;
+}
+.formpeople .formtext .formthunhat .email {
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+  position: relative;
+}
+.formpeople .formtext .formthunhat .email .fa-solid {
+  left: 1em;
+  line-height: 1;
+  position: absolute;
+  top: 0.6rem;
+  right: 3em;
+}
+.formpeople form {
+  border-radius: 10px;
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  background: #fff;
+}
+.formpeople form h2 {
+  font-size: 33px;
+  font-weight: 700;
+  color: #181818;
+  padding: 30px 0;
+}
+.formpeople form .over {
+  margin-bottom: 25px;
+}
+.formpeople form .form-group {
+  width: 90%;
+  color: #b61984;
+  padding-right: 6px;
+}
+.formpeople form .form-group .form-control {
+  padding: 0.5rem 2.2rem;
+  border-radius: 20px;
+}
+.formpeople form .form-group textarea {
+  padding: 1em 1em 1em 3.5em !important;
+  height: 90px;
+  line-height: 1.5;
+  font-size: 0.8em !important;
+  border-radius: 20px;
+}
+.formpeople form .form-group .input-group-langugue {
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+  position: relative;
+}
+.formpeople form .form-group .input-group-langugue .fa-solid {
+  left: 1em;
+  position: absolute;
+  top: 0.6rem;
+}
+.formpeople form .form-group .input-group-messages {
+  position: absolute;
+  top: 21.8em;
+  left: 3.2em;
+}
+.formpeople .formpeoplebottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.formpeople .formpeoplebottom img {
+  max-width: 100%;
+  height: auto;
+}
+.formpeople .btnPhone {
+  background: #b61984;
+  border-radius: 20px;
+  border: 2px;
+  padding: 7px 20px;
+  color: #f5f9fe;
+  justify-content: center;
+  text-align: center;
+}
+.formpeople .btnPhone span {
+  color: #f5f9fe;
+  font-size: 13.5px;
+  font-weight: 500;
+  justify-content: center;
+}
+.formpeople .btnPhone:hover {
+  background: #f5f9fe;
+  border: solid 1px #b61984;
+  color: #181818;
+  transition: all 0.5s;
+  color: #b61984;
+}
+.formpeople .btnPhone:hover span {
+  color: #b61984;
+  font-size: 13.5px;
+  font-weight: 500;
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,75 @@
+//Khi nào khai báo biến
+//? Các giá trị dễ bị thay đổi khi khách hàng đổi yêu cầu
+//? Các giá trị được dùng ở nhiều chỗ (2 chỗ trở lên)
+
+//color
+$color-dark-1: #181818;
+$color-dark-2: #191919;
+$color-white-1: #f5f9fe;
+$color-white-2: #e2ebfc;
+$color-white-3: #fff;
+
+$color-pink-1: #b61984;
+
+//dark color
+$color-dark-2:#121212;
+$color-dark-3:#353536;
+$color-dark-4:#212121;
+
+//bg-color
+$bg-color: #b61984 ;
+$bg-color-white: #f5f9fe;
+
+
+
+//font size
+$fs-1: 11px;
+$fs-2: 13px;
+$fs-3: 15px;
+$fs-4: 16px;
+$fs-5: 23px;
+$fs-6: 37px;
+$fs-7: 44px;
+$fs-8: 57px;
+
+
+
+
+//font weight
+$fw-1: 300;
+$fw-2: 400;
+$fw-3: 500;
+$fw-4: 700;
+
+//letter spacing
+$ls-1: 0.015rem;
+$ls-2: 0.03rem;
+
+//Padding
+$pd-1: 7px;
+$pd-2: 14px;
+$pd-3: 20px;
+$pd-4: 25px;
+$pd-5: 30px;
+$pd-6: 40px;
+$pd-7: 60px;
+$pd-8: 120px;
+
+
+//Margin
+$mg-1: 6px;
+$mg-2: 8px;
+$mg-3: 70px;
+$mg-4: 60px;
+
+//border
+$bd-1: 2px;
+$bd-2: 8px;
+
+//break points
+$breakpoints: (
+    "extra-large": 1200px,
+    "large": 992px,
+    "medium": 768px,
+    "small": 576px
+);

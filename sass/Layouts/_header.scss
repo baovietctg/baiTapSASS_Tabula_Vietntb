@@ -1,0 +1,97 @@
+//? Tabula header
+
+.fixed-top {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    // left: 50%;
+    padding: 0px;
+    margin: none;
+    z-index: 100;
+    // transform: translateX(-50%);
+    border-bottom: 0px solid rgba(231, 231, 231, 0.18);
+    background-color: transparent;
+}
+//hiệu ứng khí scroll web xuống dưới thì chuyển từ thanh menu to sang thanh menu nhỏ
+.navbar-fixed {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    // left: 50%;
+    padding: 0px;
+    margin: none;
+    border-bottom: none;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+    z-index: 100;
+    background-color: $bg-color-white;
+    // transform: translateX(-50%);
+}
+
+header {
+    //fix header khi ở Top
+
+    //Hiện dấu tròn ở menu active
+    .active::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #b61984;
+        display: block;
+        border-radius: 50%;
+        transform: translateX(25px) translateY(0px);
+    }
+    #nav-vietntb{
+        padding: none!important;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+        @include styleText($color-dark-1, $fs-3, $fw-3);
+        // transform: translateX(-50%);
+        // transition: all 1s;
+    }
+
+    //đẩy menu sang phải gần button
+    .collapse .navbar-nav {
+        padding-left: 200px;
+    }
+
+    //đổi màu chữ menu khi hover
+    .navbar-nav .nav-item a:hover {
+        text-decoration: none;
+        color: #b61984;
+    }
+
+        .btnPhone {
+            @include styleButton($bg-color, 20px, $bd-1, $pd-1, $pd-3);
+            color: $bg-color-white;
+            justify-content: center;
+            text-align: center;
+            span {
+                @include styleText($color-white-1, $fs-2 + 0.5, $fw-3);
+                justify-content: center;
+            }
+            &:hover {
+                @include styleButtonHover($bg-color-white, solid 1px $color-pink-1, $color-dark-1);
+                transition: all 0.5s;
+                color: $color-pink-1;
+                span {
+                    @include styleText($color-pink-1, $fs-2 + 0.5, $fw-3);
+                    justify-content: center;
+                }
+            }
+        }
+
+        //Social area
+        .socialArea a {
+            font-size: $fs-2;
+            padding-left: 10px;
+            color: $color-dark-1;
+            @extend .nav-link;
+            &:hover {
+                text-decoration: none;
+                color: #b61984;
+            }
+        }
+}

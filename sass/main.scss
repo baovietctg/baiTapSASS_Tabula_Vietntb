@@ -1,0 +1,17 @@
+//Chỉ import đường dẫn tới các file con
+//Không điền bất kỳ code css nào
+
+
+//Helper
+@import "./Helper/variables";
+@import "./Helper/mixin";
+
+//Vendor
+
+//Layout
+@import "./Layouts/header";
+@import "./Layouts/carousel";
+@import "./Layouts/teacher";
+@import "./Layouts/contact";
+
+
