@@ -1,60 +1,13 @@
-//Contact form
-
-.taContact{
-    width: 50%;
-    margin: auto;
-    display: flex;
-
-}
-.formContact{
-
-
-}
-#contact_left{
-    width: 60%;
-}
-#contact_right{
-    width: 20%;
-    margin-right: 0;
-}
-
-.contactName,.contactEmail{
-    border: solid 1px gray;
-    border-radius: 20px 20px 20px 20px;
-    padding-right: $pd-3;
-    margin-right: $mg-1;
-    .icon{
-        padding: $pd-1 $pd-2;
-        color: palevioletred;
-    }
-}
-
-
-#InputName,#InputEmail{
-    border: none;
-    outline: none;
-    padding: $pd-1 0;
-    // border-radius: 0px 0px 20px 20px;
-    &:input:focus  {
-        border: 5px solid rgb(2, 112, 236);
-        box-shadow: 0px 0px 7px 0px rgba(22, 155, 243, 0.8);
-    }
-}
-
-
-.formpeople {
-    padding-top: 150px;
+.taContact {
+    padding-top: 100px;
     position: relative;
-
-
     .row {
-        width: 100%
+        width: 100%;
+        margin: none;
     }
-
-    .formimg {
+    .form_img {
         display: block;
         overflow: hidden;
-
         img {
             display: block;
             margin: 0;
@@ -63,149 +16,124 @@
             height: auto;
         }
     }
-
-    .formtext {
-
-        .formthunhat {
-            display: flex;
-            justify-content: center;
-
-
-            .name {
+    .form_zone {
+        form {
+            width: 80%;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
+            padding: 20px;
+            background: $color-white-3;
+            h2 {
+                font-size: $fs-6;
+                font-weight: $fw-4;
+                color: #181818;
+                padding: 30px 0;
+                text-align: center;
+            }
+            .form_name_email {
                 display: flex;
                 justify-content: center;
-                max-width: 50%;
-                padding-right: 1em;
-
-                .fa-solid {
-                    position: absolute;
-                    top: 11.2rem;
-                    left: 3em;
-
+                .name {
+                    display: flex;
+                    justify-content: center;
+                    max-width: 50%;
+                    padding-right: 1em;
+                    position: relative;
+                    .fa-user {
+                        left: 1em;
+                        line-height: 1;
+                        position: absolute;
+                        top: 0.6rem;
+                        right: 3em;
+                    }
                 }
-
-
-
+                .email {
+                    display: flex;
+                    justify-content: center;
+                    max-width: 50%;
+                    position: relative;
+                    .fa-envelope {
+                        left: 1em;
+                        line-height: 1;
+                        position: absolute;
+                        top: 0.6rem;
+                        right: 3em;
+                    }
+                }
             }
-
-            .email {
+            .input-group-language {
                 display: flex;
                 justify-content: center;
                 max-width: 50%;
                 position: relative;
-
-                .fa-solid {
+                .fa-graduation-cap {
                     left: 1em;
-                    line-height: 1;
                     position: absolute;
                     top: 0.6rem;
-                    right: 3em;
-
                 }
-
             }
-        }
-    }
-
-    form {
-
-        border-radius: 10px;
-        box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
-        padding: 20px;
-        background: $color-white-3;
-
-        
-        h2 {
-            font-size: 33px;
-            font-weight: 700;
-            color: #181818;
-            padding: 30px 0;
-            
-        }
-
-        .over {
-            margin-bottom: 25px;
-        }
-
-
-
-
-
-        .form-group {
-            width: 90%;
-            color: #b61984;
-            padding-right: 6px;
-            .form-control {
-                padding: 0.5rem 2.2rem;
-                border-radius: 20px;
-            }
-
             textarea {
                 padding: 1em 1em 1em 3.5em !important;
-                height: 90px;
+                height: 100px;
                 line-height: 1.5;
-                font-size: .8em !important;
+                font-size: 0.8em !important;
                 border-radius: 20px;
-
             }
-
-
-            .input-group-langugue {
+            .input-group-messages {
                 display: flex;
                 justify-content: center;
                 max-width: 50%;
                 position: relative;
-
-                .fa-solid {
+                .fa-message {
                     left: 1em;
                     position: absolute;
-                    top: 0.6rem;
-
-
+                    top: 1rem;
                 }
-
             }
-
-            .input-group-messages {
-
-                position: absolute;
-                top: 21.8em;
-                left: 3.2em;
-
-            }
-
-
         }
     }
+}
 
-    .formpeoplebottom {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        img {
-            max-width: 100%;
-            height: auto;
-        }
+.taContact_pic_bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    img {
+        max-width: 100%;
+        height: auto;
     }
-
-        .btnPhone {
-            @include styleButton($bg-color, 20px, $bd-1, $pd-1, $pd-3);
-            color: $bg-color-white;
+}
+.btnPhone {
+    @include styleButton($bg-color, 30px, $bd-1, $pd-2, $pd-7);
+    color: $bg-color-white;
+    justify-content: center;
+    text-align: center;
+    span {
+        @include styleText($color-white-1, $fs-2 + 0.5, $fw-3);
+        justify-content: center;
+    }
+    &:hover {
+        @include styleButtonHover($bg-color-white, solid 1px $color-pink-1, $color-dark-1);
+        transition: all 0.8s;
+        color: $color-pink-1;
+        span {
+            @include styleText($color-pink-1, $fs-2 + 0.5, $fw-3);
             justify-content: center;
-            text-align: center;
-            span {
-                @include styleText($color-white-1, $fs-2 + 0.5, $fw-3);
-                justify-content: center;
-            }
-            &:hover {
-                @include styleButtonHover($bg-color-white, solid 1px $color-pink-1, $color-dark-1);
-                transition: all 0.5s;
-                color: $color-pink-1;
-                span {
-                    @include styleText($color-pink-1, $fs-2 + 0.5, $fw-3);
-                    justify-content: center;
-                }
-            }
         }
+    }
+}
+.form-group {
+    width: 90%;
+    color: #b61984;
+    padding-right: 6px;
+    .form-control {
+        padding: 0.5rem 2.2rem;
+        border-radius: 20px;
+    }
+}
 
+//tạo margin giữa các vùng
+.over {
+    margin-bottom: 25px;
 }

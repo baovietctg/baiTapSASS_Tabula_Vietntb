@@ -191,168 +191,235 @@ header .socialArea a:hover {
 }
 
 .taContact {
-  width: 50%;
-  margin: auto;
-  display: flex;
-}
-
-#contact_left {
-  width: 60%;
-}
-
-#contact_right {
-  width: 20%;
-  margin-right: 0;
-}
-
-.contactName, .contactEmail {
-  border: solid 1px gray;
-  border-radius: 20px 20px 20px 20px;
-  padding-right: 20px;
-  margin-right: 6px;
-}
-.contactName .icon, .contactEmail .icon {
-  padding: 7px 14px;
-  color: palevioletred;
-}
-
-#InputName, #InputEmail {
-  border: none;
-  outline: none;
-  padding: 7px 0;
-}
-#InputName:input:focus, #InputEmail:input:focus {
-  border: 5px solid rgb(2, 112, 236);
-  box-shadow: 0px 0px 7px 0px rgba(22, 155, 243, 0.8);
-}
-
-.formpeople {
-  padding-top: 150px;
+  padding-top: 100px;
   position: relative;
 }
-.formpeople .row {
+.taContact .row {
   width: 100%;
+  margin: none;
 }
-.formpeople .formimg {
+.taContact .form_img {
   display: block;
   overflow: hidden;
 }
-.formpeople .formimg img {
+.taContact .form_img img {
   display: block;
   margin: 0;
   line-height: 0;
   max-width: 100%;
   height: auto;
 }
-.formpeople .formtext .formthunhat {
+.taContact .form_zone form {
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  background: #fff;
+}
+.taContact .form_zone form h2 {
+  font-size: 37px;
+  font-weight: 700;
+  color: #181818;
+  padding: 30px 0;
+  text-align: center;
+}
+.taContact .form_zone form .form_name_email {
   display: flex;
   justify-content: center;
 }
-.formpeople .formtext .formthunhat .name {
+.taContact .form_zone form .form_name_email .name {
   display: flex;
   justify-content: center;
   max-width: 50%;
   padding-right: 1em;
-}
-.formpeople .formtext .formthunhat .name .fa-solid {
-  position: absolute;
-  top: 11.2rem;
-  left: 3em;
-}
-.formpeople .formtext .formthunhat .email {
-  display: flex;
-  justify-content: center;
-  max-width: 50%;
   position: relative;
 }
-.formpeople .formtext .formthunhat .email .fa-solid {
+.taContact .form_zone form .form_name_email .name .fa-user {
   left: 1em;
   line-height: 1;
   position: absolute;
   top: 0.6rem;
   right: 3em;
 }
-.formpeople form {
-  border-radius: 10px;
-  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  background: #fff;
-}
-.formpeople form h2 {
-  font-size: 33px;
-  font-weight: 700;
-  color: #181818;
-  padding: 30px 0;
-}
-.formpeople form .over {
-  margin-bottom: 25px;
-}
-.formpeople form .form-group {
-  width: 90%;
-  color: #b61984;
-  padding-right: 6px;
-}
-.formpeople form .form-group .form-control {
-  padding: 0.5rem 2.2rem;
-  border-radius: 20px;
-}
-.formpeople form .form-group textarea {
-  padding: 1em 1em 1em 3.5em !important;
-  height: 90px;
-  line-height: 1.5;
-  font-size: 0.8em !important;
-  border-radius: 20px;
-}
-.formpeople form .form-group .input-group-langugue {
+.taContact .form_zone form .form_name_email .email {
   display: flex;
   justify-content: center;
   max-width: 50%;
   position: relative;
 }
-.formpeople form .form-group .input-group-langugue .fa-solid {
+.taContact .form_zone form .form_name_email .email .fa-envelope {
+  left: 1em;
+  line-height: 1;
+  position: absolute;
+  top: 0.6rem;
+  right: 3em;
+}
+.taContact .form_zone form .input-group-language {
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+  position: relative;
+}
+.taContact .form_zone form .input-group-language .fa-graduation-cap {
   left: 1em;
   position: absolute;
   top: 0.6rem;
 }
-.formpeople form .form-group .input-group-messages {
-  position: absolute;
-  top: 21.8em;
-  left: 3.2em;
+.taContact .form_zone form textarea {
+  padding: 1em 1em 1em 3.5em !important;
+  height: 100px;
+  line-height: 1.5;
+  font-size: 0.8em !important;
+  border-radius: 20px;
 }
-.formpeople .formpeoplebottom {
+.taContact .form_zone form .input-group-messages {
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+  position: relative;
+}
+.taContact .form_zone form .input-group-messages .fa-message {
+  left: 1em;
+  position: absolute;
+  top: 1rem;
+}
+
+.taContact_pic_bottom {
   position: absolute;
   bottom: 0;
   left: 0;
 }
-.formpeople .formpeoplebottom img {
+.taContact_pic_bottom img {
   max-width: 100%;
   height: auto;
 }
-.formpeople .btnPhone {
+
+.btnPhone {
   background: #b61984;
-  border-radius: 20px;
+  border-radius: 30px;
   border: 2px;
-  padding: 7px 20px;
+  padding: 14px 60px;
   color: #f5f9fe;
   justify-content: center;
   text-align: center;
 }
-.formpeople .btnPhone span {
+.btnPhone span {
   color: #f5f9fe;
   font-size: 13.5px;
   font-weight: 500;
   justify-content: center;
 }
-.formpeople .btnPhone:hover {
+.btnPhone:hover {
   background: #f5f9fe;
   border: solid 1px #b61984;
   color: #181818;
-  transition: all 0.5s;
+  transition: all 0.8s;
   color: #b61984;
 }
-.formpeople .btnPhone:hover span {
+.btnPhone:hover span {
   color: #b61984;
   font-size: 13.5px;
   font-weight: 500;
   justify-content: center;
+}
+
+.form-group {
+  width: 90%;
+  color: #b61984;
+  padding-right: 6px;
+}
+.form-group .form-control {
+  padding: 0.5rem 2.2rem;
+  border-radius: 20px;
+}
+
+.over {
+  margin-bottom: 25px;
+}
+
+footer {
+  height: auto;
+  background-image: url(../img/footer_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+footer .row {
+  padding: 180px 0 200px;
+}
+footer .row .title {
+  line-height: 1.2;
+}
+footer .row .title h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 24px 0;
+}
+footer .row .footer-address div i {
+  padding-right: 8px;
+  color: #fff;
+}
+footer .row .footer-address span {
+  color: #fff;
+}
+footer .row .icon-social {
+  padding: 20px 0;
+  margin-right: 18px;
+}
+footer .row .icon-social a {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #fff;
+  text-decoration: none;
+  padding-top: 5px;
+  margin-right: 13px;
+  transition: all 0.5s;
+}
+footer .row .icon-social a:hover {
+  color: #181818;
+}
+footer .row .footer-menu a,
+footer .row .footer-About a {
+  width: 30%;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+  text-decoration: none;
+}
+footer .row .footer-menu a:hover,
+footer .row .footer-About a:hover {
+  opacity: 0.6;
+}
+footer .row .new div {
+  padding: 30px 0 20px;
+  justify-content: center;
+  text-align: center;
+}
+footer .row .new input {
+  color: white;
+  background-color: #b61984;
+  padding: 10.5px 40px;
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  text-align: center;
+  width: 100%;
+}
+footer .row .new .btn-sub {
+  width: 100%;
+  background: #f5f9fe;
+  border-radius: 30px;
+  border: 2px;
+  padding: 14px 7px;
+  color: #181818;
+}
+footer .row .new .btn-sub:hover {
+  background: #b61984;
+  border: solid 1px #f5f9fe;
+  color: #f5f9fe;
+  transition: all 0.8s;
 }/*# sourceMappingURL=main.css.map */
